@@ -1,0 +1,116 @@
+@import './navbar';
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans' , sans-serif;
+}
+.hero{
+    background-color: $light;
+
+    &__container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        margin: 0 auto;
+        height: 90vh;
+        z-index: 1;
+        width: 100%;
+        max-width: 1200px;
+        padding-right: 24px;
+        padding-left: 24px;
+
+        @include tablet{
+            grid-template-columns: 1fr;
+            height: 100%;
+
+        }
+        &--left{
+            width: 100%;
+            line-height: 1.2;
+            @include tablet{
+                padding: 5rem 0;
+            }
+            @include mobile {
+              line-height: 1.5;
+            }
+        }
+        &--left h1{
+            font-size: 4rem;
+            color: $lime;
+
+            @include mobile{
+                font-size: 2rem;
+            }
+
+        }
+        &--left h2{
+            font-size: 4rem;
+            color: $dark;
+
+            @include mobile{
+                font-size: 1rem;
+            }
+
+        }
+         &--left p{
+             font-size: 2rem;
+             color: $dark;
+             margin-top: 1rem;
+             font-weight: 500;
+
+        @include mobile{
+            font-size: 1rem;
+        }
+        }
+        &--button{
+            border: none;
+            border-radius: 4px;
+            outline: none;
+            color: $light;
+            background-color: $lime;
+            transition: all 0.3s;
+            cursor: pointer;
+            margin-top: 2rem;
+            position: relative;
+            font-size: 1rem;
+            padding: 14px 34px;
+        }
+        &--button a{
+            position: relative;
+            text-decoration: none;
+            z-index: 2;
+            color: $light;
+
+        }
+        &--button::after{
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background-color: $orangeRed;
+            transition: all 0.3s;
+            border-radius: 4px;
+        }
+        &--button:hover:after{
+            width: 100%;
+
+        }
+        &--right{
+            text-align: center;
+            display: flex;
+        }
+        &--animation{
+            height: 100%;
+            width: 100%;
+        }
+
+}
+
+
+
+}

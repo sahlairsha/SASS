@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Styles/styles.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+
+
+    <title>HTML + SASS</title>
+</head>
+<body>
+   <!-- NavBar Section -->
+   <nav class="navbar">
+    <a href="/" class="navbar__logo">SASS</a>
+    <div class="navbar__bars">
+        <i class="fa fa-bars"></i>
+    </div>
+<div class="navbar__menu">
+    <a href="/" class="navbar__menu__links">Home</a>
+    <a href="/" class="navbar__menu__links">Products</a>
+    <a href="/" class="navbar__menu__links">Sevices</a>
+    <a href="/" class="navbar__menu__links" id="button">Sign Up</a>
+</div>
+   </nav>
+<!-- Hero Section -->
+<div class="hero">
+    <div class="hero__container">
+        <div class="hero__container--left">
+            <h1>They Are Coming</h1>
+            <h2>Be Ready..</h2>
+            <p>Sign Up now to join the list.</p>
+            <button class="hero__container--button">
+                <a href="#"> Sign Up</a>
+            </button>
+        </div>
+        <div class="hero__container--right">
+            <dotlottie-player src="https://lottie.host/0bbab835-8636-4413-9f4d-7d0040285dc9/wAOWPE3nrd.json" background="transparent" speed="1" class="hero__container--animation" direction="1" mode="normal" loop autoplay></dotlottie-player>
+        </div>
+    </div>
+</div>
+</body>
+</html>
